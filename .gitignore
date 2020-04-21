@@ -25,3 +25,13 @@ TESTS*.xml
 .tox/
 .vagrant/
 .vscode
+bin/
+fabric-samples/
+
+*.block
+$GOPATH
+vendor
+go.sum
+*.db
+__debug_bin
+
