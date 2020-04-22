@@ -58,7 +58,7 @@ RUN cp -r CsMapDev/Include /usr/local/include/CsMap && cp CsMapDev/Source/CsMap.
 # CouchDB
 RUN git clone https://github.com/apache/couchdb
 WORKDIR /couchdb
-RUN git checkout tags/2.3.1
+RUN git checkout tags/2.1.1
 COPY hastings-fixer.sh .
 RUN ./hastings-fixer.sh before-configure
 RUN ./configure --disable-docs 
